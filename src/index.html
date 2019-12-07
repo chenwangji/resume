@@ -253,6 +253,42 @@
           </div>
         </div>
       </section>
+
+      <section class="project">
+        <header class="section-hd">
+          <span class="section-title-l"></span>
+          <h2 class="section-title">个人项目</h2>
+          <span class="section-title-r"></span>
+        </header>
+        <div class="section-bd">
+          <div class="item">
+            <header class="item-hd">
+              <a class="btn item-more" href="https://github.com/chenwangji">Github</a>
+            </header>
+            <div class="item-bd">
+              <ul>
+                <li>
+                  <a href="http://www.todyto.cn">nuxt-blog</a>
+                  基于 nuxt 开发同构个人站，适配多端，使用 pm2 守护 Node 进程，Nginx 转发服务
+                </li>
+                <li>
+                  <a href="http://admin.todyto.cn">blog-admin</a>
+                  个人站后台管理，TypeScript + Vue 组合开发，封装七牛云存储，加入 jwt 校验。
+                </li>
+                <li>
+                  <a href="https://github.com/chenwangji/nuxt-blog-server">blog-service</a>
+                  个人站服务，Koa2 + MongoDB 组合开发，提供 RESTful 风格 api
+                </li>
+                <li>
+                  <a href="https://github.com/chenwangji/weather-cli">weather-query-util</a>
+                  一个可以查看天气预报的 Node 命令行应用
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </section>
     </div>
 
     <div class="content-right">
@@ -264,38 +300,6 @@
           <span class="section-title-r"></span>
         </header>
         <div class="section-bd">
-
-          <div class="item">
-            <header class="item-hd">
-              <h3 class="item-name">RoboG 赛事官网及管理端（2019.05-2019.06）</h3>
-              <a class="btn item-more">React</a>
-            </header>
-            <div class="item-bd">
-                <p class="item-des">RoboG 机器人系列比赛官方站点</p>
-              <ul class="section-content">
-                <li>参与项目前期准备，需求分析，切实地提出了自己的解决方案并成功实践，达到技术反哺产品的成果。</li>
-                <li>基于 React + Dva + Antd 技术栈快速搭建官网后台。</li>
-                <li>基于 React，react-intl 等开发出响应式，支持国际化的官网前台。</li>
-                <li>由业务中较多同类型静态页面提炼出通过 markdown 编辑器和可配置式路由的方式动态生成页面，极大程度避免了重复工作，<a href="http://log.todyto.cn/article/5d56358224c77b5e886b1fde">解放了开发相关页面的人员</a>。</li>
-                <li>封装阿里云 OSS 上传组件，二次开发markdown 编辑器，完善预览功能等，改善运营的使用体验。</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="item">
-            <header class="item-hd">
-              <h3 class="item-name">Jimu 机器人小程序（2019.07-2019.08）</h3>
-              <a class="btn item-more">小程序</a>
-            </header>
-            <div class="item-bd">
-                <p class="item-des">该小程序包含 Jimu 机器人连接及控制、社区、赛事报名和营销活动的多模块集合。</p>
-              <ul class="section-content">
-                <li>定制蓝牙接口，通过小程序蓝牙 API 连接与控制机器人，使之能完成特定动作</li>
-                <li>封装视频播放、列表懒加载等较复杂组件；通过 wxs 提取过滤器</li>
-                <li>与后端梳理及制定登录逻辑，封装成公共方法，使得业务开发与登录逻辑解耦</li>
-              </ul>
-            </div>
-          </div>
 
           <div class="item">
             <header class="item-hd">
@@ -312,6 +316,39 @@
                 <li>使用 postcss-px-to-viewport 等方式完成多端适配。</li>
                 <li>封装 dialog, toast, 抽屉等通用业务组件。</li>
                 <li>根据具体需求<a href="http://log.todyto.cn/article/5ddbce9f24c77b5e886b1fe3">更新 webpack 配置</a>，提升开发效率，解决相应问题。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <header class="item-hd">
+              <h3 class="item-name">Jimu 机器人小程序（2019.07-2019.08）</h3>
+              <a class="btn item-more">小程序</a>
+            </header>
+            <div class="item-bd">
+                <p class="item-des">该小程序包含 Jimu 机器人连接及控制、社区、赛事报名和营销活动的多模块集合。</p>
+              <ul class="section-content">
+                <li>定制蓝牙接口，通过小程序蓝牙 API 连接与控制机器人，使之能完成特定动作</li>
+                <li>封装视频播放、列表懒加载等较复杂组件；通过 wxs 提取过滤器</li>
+                <li>与后端梳理及制定登录逻辑，封装成公共方法，使得业务开发与登录逻辑解耦</li>
+                <li>封装 wx-request 为 Promise 形式，使之可用 async/await 方式调用，代码增强可读性，并统一处理请求和响应</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="item">
+            <header class="item-hd">
+              <h3 class="item-name">RoboG 赛事官网及管理端（2019.05-2019.06）</h3>
+              <a class="btn item-more">React</a>
+            </header>
+            <div class="item-bd">
+                <p class="item-des">RoboG 机器人系列比赛官方站点</p>
+              <ul class="section-content">
+                <li>参与项目前期准备，需求分析，切实地提出了自己的解决方案并成功实践，达到技术反哺产品的成果。</li>
+                <li>基于 React + Dva + Antd 技术栈快速搭建官网后台。</li>
+                <li>基于 React，react-intl 等开发出响应式，支持国际化的官网前台。</li>
+                <li>由业务中较多同类型静态页面提炼出通过 markdown 编辑器和可配置式路由的方式动态生成页面，极大程度避免了重复工作，<a href="http://log.todyto.cn/article/5d56358224c77b5e886b1fde">解放了开发相关页面的人员</a>。</li>
+                <li>封装阿里云 OSS 上传组件，二次开发markdown 编辑器，完善预览功能等，改善运营的使用体验。</li>
               </ul>
             </div>
           </div>
@@ -363,48 +400,6 @@
                 <li>负责前期的技术选型，需求评审，开发任务细化</li>
                 <li>采用 Vue 相关技术栈，封装 Axios 请求和响应拦截，微信端基于 js-sdk 封装一些工具方法</li>
                 <li>与设计一起制定 UI 规范，提炼出一套专注于移动端开发的组件库，并基于此高效搭建项目页面</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="item">
-            <header class="item-hd">
-              <h3 class="item-name">荷包常见问题（2018.4-2018.5）</h3>
-              <a class="btn item-more">小程序</a>
-            </header>
-            <div class="item-bd">
-              <p class="item-des">一个解答投资用户常见问题的微信小程序。</p>
-              <ul class="section-content">
-                <li>负责小程序前端开发工作</li>
-                <li>依据设计稿和小程序规范快速开发页面</li>
-                <li>封装 wx-request 为 Promise 形式，使之可用 async/await 方式调用，代码增强可读性，并统一处理请求和响应</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="item">
-            <header class="item-hd">
-              <h3 class="item-name">个人项目</h3>
-              <a class="btn item-more" href="https://github.com/chenwangji">Github</a>
-            </header>
-            <div class="item-bd">
-              <ul>
-                <li>
-                  <a href="http://www.todyto.cn">nuxt-blog</a>
-                  基于 nuxt 开发同构个人站，适配多端，使用 pm2 守护 Node 进程，Nginx 转发服务
-                </li>
-                <li>
-                  <a href="http://admin.todyto.cn">blog-admin</a>
-                  个人站后台管理，TypeScript + Vue 组合开发，封装七牛云存储，加入 jwt 校验。
-                </li>
-                <li>
-                  <a href="https://github.com/chenwangji/nuxt-blog-server">blog-service</a>
-                  个人站服务，Koa2 + MongoDB 组合开发，提供 RESTful 风格 api
-                </li>
-                <li>
-                  <a href="https://github.com/chenwangji/weather-cli">weather-query-util</a>
-                  一个可以查看天气预报的 Node 命令行应用
-                </li>
               </ul>
             </div>
           </div>
