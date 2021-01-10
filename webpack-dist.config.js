@@ -102,7 +102,7 @@ module.exports = {
 
       // 调用 Chrome 渲染出 PDF 文件
       const chromePath = findChrome();
-      spawnSync(chromePath, ['--headless', '--disable-gpu', `--print-to-pdf=${path.resolve(outputPath, '陈望基-Web前端开发工程师-4年.pdf')}`,
+      spawnSync(chromePath, ['--headless', '--disable-gpu', `--print-to-pdf=${path.resolve(outputPath, '陈望基-Web前端开发工程师.pdf')}`,
         'http://resume.todyto.cn' // 这里注意改成你的在线简历的网站
       ]);
 
